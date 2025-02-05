@@ -379,7 +379,13 @@ Head to the Servers tab in the admin panel, click `Create New` enter the followi
 **Nest**: Your Nest
 **Egg**: SS14 Server (CDN)
 **Service Variables**:
-
+ - **Server Name**:
+ - **Server Tickrate**:
+ - **Public Server**:
+ - **Default Admin User**:
+ - **Server Description**: 
+ - **Hub URLs**:
+ - **
 
 Hit create server.
 
@@ -410,6 +416,6 @@ sudo certbot --nginx -d gameserver.yourdomain.com
 systemctl reload nginx
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjE5Njg1OTIsOTAzNTAyMjIxLC01Mj
+eyJoaXN0b3J5IjpbLTIwMTUzNTc1NzQsOTAzNTAyMjIxLC01Mj
 cyMzg4MjUsODcwNTQ0NzYyXX0=
 -->
