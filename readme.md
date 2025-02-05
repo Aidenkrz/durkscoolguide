@@ -366,54 +366,48 @@ host    all             all             all                     md5
 You're now finished with your Postgres setup!
 
 ## Setting up a SS14 Game Server
+Head to the Servers tab in the admin panel, click `Create New` enter the following information
 
-its a fine day  
-people open windows  
-they leave their houses  
-just for a short while  
-they walk by the grass  
-and they look at the grass  
-they look at the sky  
-they walk by the grass  
-and they look at the grass  
-they look at the sky  
-its going to be a fine night tonight  
-its going to be a fine day tomorrow  
-its going to be a fine night tonight  
-its going to be a fine day tomorrow
+**Server Name**: Game Server
+**Server Owner**: Enter the name for you admin account, it should autofill
+**Start Server when Installed**: True
+**Default Allocation**: Choose whatever port you'd like
+**Memory**: 0 (I recommend watching this overtime, figure out what it sticks around and set it a little above that)
+**Disk Space**: 0 (same as above)
+**Nest**: Your Nest
+**Egg**: Postgres
+**Service Variables**:
 
-la la la la la dee da da dee  
-la la la la la la da da da  
-la la la la la dee da da dee  
-la la la la la la da da da
 
-its a fine day  
-people open windows  
-they leave their houses  
-just for a short while  
-its a fine day  
-people open windows  
-they leave their houses  
-just for a short while
+Hit create server.
 
-la la la la la dee da da dee  
-la la la la la la da da da  
-la la la la la dee da da dee  
-la la la la la la da da da  
-la la la la la dee da da dee  
-la la la la la la da da da  
-la la la la la dee da da dee  
-la la la la la la da da da
+Head to your domain registar, create a new A record, fill it like before but with the CDN, and wait a few minutes.
+![CDN DNS Record](cdndns.png)
 
-its going to be a fine night tonight  
-its going to be a fine day tomorrow  
-its going to be a fine night tonight  
-its going to be a fine day tomorrow
+In your terminal run
+```bash
+nano /etc/nginx/sites-available/containers/gameserver.conf
+```
+Enter the following config, make sure to edit `server_name` and `proxy_pass`
+```
+server {
+    listen 80;
 
-sitting in this field  
-i remember how we were going to  
-sit in this field  
-but never quite did
+    server_name gameserver.yourdomain.com;
+
+    location / {
+        proxy_pass http://your_ip:port;
+				include /etc/nginx/proxy_params;
+    }
+}
+```
+then run
+```bash
+ln -s /etc/nginx/sites-available/containers/gameserver.conf /etc/nginx/sites-enabled/
+sudo certbot --nginx -d gameserver.yourdomain.com
+systemctl reload nginx
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNzIzODgyNSw4NzA1NDQ3NjJdfQ==
+eyJoaXN0b3J5IjpbOTAzNTAyMjIxLC01MjcyMzg4MjUsODcwNT
+Q0NzYyXX0=
 -->
