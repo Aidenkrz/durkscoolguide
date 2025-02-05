@@ -422,12 +422,12 @@ It will probably be empty, here we will need to input some basic configs to get 
 ```toml
 [net]
 tickrate = 30
-port = 00000 # Enter your servers port
+port = 00000 # Enter your game servers port
 
 [status]
 enabled = true
-bind = "*:00000"
-connectaddress = "udp://0.0.0.0:00000"
+bind = "*:00000" # Enter your game server's port
+connectaddress = "udp://0.0.0.0:00000" # Enter your game server's IP:Port
 
 [game]
 hostname = "Durk's Super Cool Awesome Server"
@@ -449,26 +449,28 @@ pg_username = "pterodactyl"
 pg_password = "***********"
 
 [console]
-login_host_user = "GoobStation"
+login_host_user = "Herobrine"
 loginlocal = true
 
 [auth]
 mode = 1
 
+# Only enter the following if you intend to setup Prometheus and Grafana
 [metrics]
 enabled = 1
 host = "*"
 port = 00000
 
-[replay]
-auto_record = false
+# Only enter the following if you intend to setup replays
+[replay] 
+auto_record = true
 auto_record_temp_dir = "/replays-recording"
 auto_record_name = "sigma_{year}_{month}_{day}-{hour}_{minute}-round_{round}.zip"
 directory = "/replays-complete/GoobSigma"
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NDcwNTUzNCwzOTIzMDE5MjAsLTgxNT
-UxOTE2OCwtMTY3MzAwMjE2NCw5MDM1MDIyMjEsLTUyNzIzODgy
-NSw4NzA1NDQ3NjJdfQ==
+eyJoaXN0b3J5IjpbMjcxOTMxMjAwLDM5MjMwMTkyMCwtODE1NT
+E5MTY4LC0xNjczMDAyMTY0LDkwMzUwMjIyMSwtNTI3MjM4ODI1
+LDg3MDU0NDc2Ml19
 -->
