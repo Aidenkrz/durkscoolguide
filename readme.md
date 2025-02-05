@@ -422,7 +422,7 @@ It will probably be empty, here we will need to input some basic configs to get 
 ```toml
 [net]
 tickrate = 30
-port = 00000 # Enter your game servers port
+port = 00000 # Enter your game server's port
 
 [status]
 enabled = true
@@ -436,16 +436,16 @@ soft_max_players = 64
 
 [hub]
 advertise = 1
-tags = "lang:en, rp:low, region:eu_w"
-server_url = "ss14://gameserver.yourserver.com"
+tags = "lang:en, rp:low, region:eu_w" # You can find a list of all tags @ https://docs.spacestation14.com/en/robust-toolbox/server-http-api.html#standard-tags
+server_url = "ss14://gameserver.yourserver.com" # Enter your domain
 hub_urls = "https://hub.spacestation14.com/,https://web.networkgamez.com/,https://hub.singularity14.co.uk/"
 
 [database]
 engine = "postgres"
 pg_host = "postgres.yourdomain.com"
-pg_port = 00000
-pg_database = "mycoolserver"
-pg_username = "pterodactyl"
+pg_port = 00000 # Enter the port for your database
+pg_database = "mycoolserver" # This can be anything
+pg_username = "pterodactyl" # Ideally you would create a seperate user in your postgres that only has access to the above database, but you can use the superuser
 pg_password = "***********"
 
 [console]
@@ -470,7 +470,7 @@ directory = "/replays-complete/GoobSigma"
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcxOTMxMjAwLDM5MjMwMTkyMCwtODE1NT
+eyJoaXN0b3J5IjpbLTcwOTE1NzM5LDM5MjMwMTkyMCwtODE1NT
 E5MTY4LC0xNjczMDAyMTY0LDkwMzUwMjIyMSwtNTI3MjM4ODI1
 LDg3MDU0NDc2Ml19
 -->
