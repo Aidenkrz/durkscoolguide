@@ -33,7 +33,8 @@ You will need:
 - [**Namecheap Domain Registration**](https://www.youtube.com/watch?v=a2Jh00ZXYrc)
 - [**Pterodactyl Getting Started**](https://pterodactyl.io/panel/1.0/getting_started.html)
 - [**Wiki.js Documentation**](https://docs.requarks.io/)
-#### The following guides will most likely be inaccurate as they do not pertain to hosting with Pterodactyl, you may still find them useful for general debugging.
+
+***The following guides will most likely be inaccurate as they do not pertain to hosting with Pterodactyl, you may still find them useful for general debugging.***
 - [**SS14 Server Hosting**](https://docs.spacestation14.com/en/general-development/setup/server-hosting-tutorial.html?highlight=level%205#level-5-big-production-server)
 - [**SS14.Admin Setup**](https://docs.spacestation14.com/en/server-hosting/setting-up-ss14-admin.html)
 - [**SS14.Changelog Setup**](https://docs.spacestation14.com/en/server-hosting/setting-up-ss14-changelog.html) -- We use Delta-V's Changelog Webhook, I will make a guide for this in the future but currently you will have to figure it out yourself.
@@ -67,7 +68,8 @@ sudo ufw disable
  as it will ***constantly*** try to get in the way.
 
 ## Installing Wings & Pterodactyl Panel
-### You must be **logged in as root** for this section.
+You must be **logged in as root** for this section.
+
 Run
 ```bash
 bash <(curl -s https://pterodactyl-installer.se)
@@ -413,5 +415,5 @@ i remember how we were going to
 sit in this field  
 but never quite did
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDczMzAwODQwLDg3MDU0NDc2Ml19
+eyJoaXN0b3J5IjpbLTUyNzIzODgyNSw4NzA1NDQ3NjJdfQ==
 -->
