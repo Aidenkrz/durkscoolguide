@@ -471,10 +471,11 @@ directory = "/replays-complete/DurksAwesomeServer" # Here as well
 
 Start your server and... boom! you have a server up and running! congrats!
 
+## Setting up Replays
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxNjU2NTU3LC04NzU5NTY4NTcsLTE1Nz
-Q1ODQ3NzQsLTE2ODY0NTExODYsLTg1MjEyMTc1MSwzOTIzMDE5
-MjAsLTgxNTUxOTE2OCwtMTY3MzAwMjE2NCw5MDM1MDIyMjEsLT
-UyNzIzODgyNSw4NzA1NDQ3NjJdfQ==
+eyJoaXN0b3J5IjpbLTEyNzczNzU3MCwtODc1OTU2ODU3LC0xNT
+c0NTg0Nzc0LC0xNjg2NDUxMTg2LC04NTIxMjE3NTEsMzkyMzAx
+OTIwLC04MTU1MTkxNjgsLTE2NzMwMDIxNjQsOTAzNTAyMjIxLC
+01MjcyMzg4MjUsODcwNTQ0NzYyXX0=
 -->
