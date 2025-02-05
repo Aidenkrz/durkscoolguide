@@ -417,9 +417,13 @@ sudo certbot --nginx -d gameserver.yourdomain.com
 systemctl reload nginx
 ```
 
-Head back over to your game server in ptero, click `Files`, `datadir`, 
+Head back over to your game server in ptero, click `Files`, `datadir`, `server_config.toml`
+It will probably be empty, here we will need to input some basic configs to get it up and running.
+```toml
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzUyMDY0NSwtODE1NTE5MTY4LC0xNj
-czMDAyMTY0LDkwMzUwMjIyMSwtNTI3MjM4ODI1LDg3MDU0NDc2
-Ml19
+eyJoaXN0b3J5IjpbMzkyMzAxOTIwLC04MTU1MTkxNjgsLTE2Nz
+MwMDIxNjQsOTAzNTAyMjIxLC01MjcyMzg4MjUsODcwNTQ0NzYy
+XX0=
 -->
