@@ -436,7 +436,7 @@ soft_max_players = 64
 [hub]
 advertise = 1
 tags = "lang:en, rp:low, region:eu_w" # You can find a list of all tags @ https://docs.spacestation14.com/en/robust-toolbox/server-http-api.html#standard-tags
-server_url = "ss14://gameserver.yourserver.com" # Enter your domain
+server_url = "ss14s://gameserver.yourdomain.com" # Enter your domain
 hub_urls = "https://hub.spacestation14.com/,https://web.networkgamez.com/,https://hub.singularity14.co.uk/"
 
 [database]
@@ -468,8 +468,8 @@ auto_record_name = "durksawesomeserver_{year}_{month}_{day}-{hour}_{minute}-roun
 directory = "/replays-complete/DurksAwesomeServer" # Here as well
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQ1ODQ3NzQsLTE2ODY0NTExODYsLT
-g1MjEyMTc1MSwzOTIzMDE5MjAsLTgxNTUxOTE2OCwtMTY3MzAw
-MjE2NCw5MDM1MDIyMjEsLTUyNzIzODgyNSw4NzA1NDQ3NjJdfQ
-==
+eyJoaXN0b3J5IjpbLTc2NzUyNDMzOCwtMTU3NDU4NDc3NCwtMT
+Y4NjQ1MTE4NiwtODUyMTIxNzUxLDM5MjMwMTkyMCwtODE1NTE5
+MTY4LC0xNjczMDAyMTY0LDkwMzUwMjIyMSwtNTI3MjM4ODI1LD
+g3MDU0NDc2Ml19
 -->
