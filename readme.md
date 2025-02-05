@@ -468,9 +468,13 @@ auto_record_temp_dir = "/replays-recording"
 auto_record_name = "durksawesomeserver_{year}_{month}_{day}-{hour}_{minute}-round_{round}.zip" # Modify the name at the start to whatever you want
 directory = "/replays-complete/DurksAwesomeServer" # Here as well
 ```
+
+Start your server and... boom! you have a server up and running! congrats!
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTk1Njg1NywtMTU3NDU4NDc3NCwtMT
-Y4NjQ1MTE4NiwtODUyMTIxNzUxLDM5MjMwMTkyMCwtODE1NTE5
-MTY4LC0xNjczMDAyMTY0LDkwMzUwMjIyMSwtNTI3MjM4ODI1LD
-g3MDU0NDc2Ml19
+eyJoaXN0b3J5IjpbODcxNjU2NTU3LC04NzU5NTY4NTcsLTE1Nz
+Q1ODQ3NzQsLTE2ODY0NTExODYsLTg1MjEyMTc1MSwzOTIzMDE5
+MjAsLTgxNTUxOTE2OCwtMTY3MzAwMjE2NCw5MDM1MDIyMjEsLT
+UyNzIzODgyNSw4NzA1NDQ3NjJdfQ==
 -->
