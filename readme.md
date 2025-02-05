@@ -473,9 +473,21 @@ Start your server and... boom! you have a server up and running! congrats!
 
 ## Setting up Replays
 go fuck yourself ig
+```bash
+sudo groupadd pteronginx
+
+sudo usermod -aG pteronginx root
+sudo usermod -aG pteronginx www-data
+sudo usermod -aG pteronginx pterodactyl
+
+sudo chown -R :pteronginx /var/lib/pterodactyl/mounts
+sudo chown -R :pteronginx /var/lib/pterodactyl/mounts/replays-complete
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIwNjEwNzYwLC0xMjc3Mzc1NzAsLTg3NT
-k1Njg1NywtMTU3NDU4NDc3NCwtMTY4NjQ1MTE4NiwtODUyMTIx
-NzUxLDM5MjMwMTkyMCwtODE1NTE5MTY4LC0xNjczMDAyMTY0LD
-kwMzUwMjIyMSwtNTI3MjM4ODI1LDg3MDU0NDc2Ml19
+eyJoaXN0b3J5IjpbMTI2ODc3OTA2NiwyMjA2MTA3NjAsLTEyNz
+czNzU3MCwtODc1OTU2ODU3LC0xNTc0NTg0Nzc0LC0xNjg2NDUx
+MTg2LC04NTIxMjE3NTEsMzkyMzAxOTIwLC04MTU1MTkxNjgsLT
+E2NzMwMDIxNjQsOTAzNTAyMjIxLC01MjcyMzg4MjUsODcwNTQ0
+NzYyXX0=
 -->
