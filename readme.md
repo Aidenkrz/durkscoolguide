@@ -365,7 +365,53 @@ You're now finished with your Postgres setup!
 
 ## Setting up a SS14 Game Server
 
+its a fine day  
+people open windows  
+they leave their houses  
+just for a short while  
+they walk by the grass  
+and they look at the grass  
+they look at the sky  
+they walk by the grass  
+and they look at the grass  
+they look at the sky  
+its going to be a fine night tonight  
+its going to be a fine day tomorrow  
+its going to be a fine night tonight  
+its going to be a fine day tomorrow
 
+la la la la la dee da da dee  
+la la la la la la da da da  
+la la la la la dee da da dee  
+la la la la la la da da da
+
+its a fine day  
+people open windows  
+they leave their houses  
+just for a short while  
+its a fine day  
+people open windows  
+they leave their houses  
+just for a short while
+
+la la la la la dee da da dee  
+la la la la la la da da da  
+la la la la la dee da da dee  
+la la la la la la da da da  
+la la la la la dee da da dee  
+la la la la la la da da da  
+la la la la la dee da da dee  
+la la la la la la da da da
+
+its going to be a fine night tonight  
+its going to be a fine day tomorrow  
+its going to be a fine night tonight  
+its going to be a fine day tomorrow
+
+sitting in this field  
+i remember how we were going to  
+sit in this field  
+but never quite did
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwNTQ0NzYyXX0=
+eyJoaXN0b3J5IjpbNDczMzAwODQwLDg3MDU0NDc2Ml19
 -->
