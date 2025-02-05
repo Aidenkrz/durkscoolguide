@@ -373,11 +373,11 @@ Head to the Servers tab in the admin panel, click `Create New` enter the followi
 **Start Server when Installed**: True
 **Default Allocation**: Choose whatever port you'd like
 **CPU Limit**: 400% (100% is equal to one core)
-**CPU Pinning**: 0-3 (This locks the container to use only these cores, this sometimes help with servers fighting over the same thread, if you make mul
+**CPU Pinning**: 0-3 (This locks the container to use only these cores, this sometimes help with servers fighting over the same thread, if you make multiple servers make sure you do not pin them to the same cores)
 **Memory**: 11444 MiB (12 GB)
 **Disk Space**: 0
 **Nest**: Your Nest
-**Egg**: Postgres
+**Egg**: SS14 Server (CDN)
 **Service Variables**:
 
 
@@ -410,6 +410,6 @@ sudo certbot --nginx -d gameserver.yourdomain.com
 systemctl reload nginx
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTYzMjU4MDMsOTAzNTAyMjIxLC01Mj
+eyJoaXN0b3J5IjpbLTE2NjE5Njg1OTIsOTAzNTAyMjIxLC01Mj
 cyMzg4MjUsODcwNTQ0NzYyXX0=
 -->
