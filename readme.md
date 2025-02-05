@@ -372,8 +372,10 @@ Head to the Servers tab in the admin panel, click `Create New` enter the followi
 **Server Owner**: Enter the name for you admin account, it should autofill
 **Start Server when Installed**: True
 **Default Allocation**: Choose whatever port you'd like
-**Memory**: 0 (I recommend watching this overtime, figure out what it sticks around and set it a little above that)
-**Disk Space**: 0 (same as above)
+**CPU Limit**: 400% (100% is equal to one core)
+**CPU Pinning**: 0-3 (This locks the container to use only these cores, this sometimes help with servers fighting over the same thread, if you make mul
+**Memory**: 11444 MiB (12 GB)
+**Disk Space**: 0
 **Nest**: Your Nest
 **Egg**: Postgres
 **Service Variables**:
@@ -408,6 +410,6 @@ sudo certbot --nginx -d gameserver.yourdomain.com
 systemctl reload nginx
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAzNTAyMjIxLC01MjcyMzg4MjUsODcwNT
-Q0NzYyXX0=
+eyJoaXN0b3J5IjpbLTEwNTYzMjU4MDMsOTAzNTAyMjIxLC01Mj
+cyMzg4MjUsODcwNTQ0NzYyXX0=
 -->
