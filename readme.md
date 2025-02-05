@@ -465,12 +465,11 @@ port = 00000 # Enter your game server's port
 [replay] 
 auto_record = true
 auto_record_temp_dir = "/replays-recording"
-auto_record_name = "sigma_{year}_{month}_{day}-{hour}_{minute}-round_{round}.zip"
-directory = "/replays-complete/DurksAwesomeServer" # modify the 
-
+auto_record_name = "durksawesomeserver_{year}_{month}_{day}-{hour}_{minute}-round_{round}.zip" # Modify the name at the start to whatever you want
+directory = "/replays-complete/DurksAwesomeServer" # Here as well
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzM3MzE1MSwzOTIzMDE5MjAsLTgxNT
+eyJoaXN0b3J5IjpbLTg1MjEyMTc1MSwzOTIzMDE5MjAsLTgxNT
 UxOTE2OCwtMTY3MzAwMjE2NCw5MDM1MDIyMjEsLTUyNzIzODgy
 NSw4NzA1NDQ3NjJdfQ==
 -->
