@@ -416,7 +416,6 @@ sudo ln -s /etc/nginx/sites-available/containers/gameserver.conf /etc/nginx/site
 sudo certbot --nginx -d gameserver.yourdomain.com
 sudo systemctl reload nginx
 ```
-
 Head back over to your game server in ptero, click `Files`, `datadir`, `server_config.toml`
 It will probably be empty, here we will need to input some basic configs to get it up and running.
 ```toml
@@ -469,7 +468,7 @@ auto_record_name = "durksawesomeserver_{year}_{month}_{day}-{hour}_{minute}-roun
 directory = "/replays-complete/DurksAwesomeServer" # Here as well
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk0MDc3NTM2LC04NTIxMjE3NTEsMzkyMz
-AxOTIwLC04MTU1MTkxNjgsLTE2NzMwMDIxNjQsOTAzNTAyMjIx
-LC01MjcyMzg4MjUsODcwNTQ0NzYyXX0=
+eyJoaXN0b3J5IjpbLTE2ODY0NTExODYsLTg1MjEyMTc1MSwzOT
+IzMDE5MjAsLTgxNTUxOTE2OCwtMTY3MzAwMjE2NCw5MDM1MDIy
+MjEsLTUyNzIzODgyNSw4NzA1NDQ3NjJdfQ==
 -->
