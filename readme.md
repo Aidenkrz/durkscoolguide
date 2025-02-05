@@ -170,11 +170,11 @@ remote: 'https://panel.goobstation.com'
 ```
 Head back to your server's terminal and enter the following command:
 ```bash
-nano /etc/pterodactyl/config.yml
+sudo nano /etc/pterodactyl/config.yml
 ```
 Paste the contents of your clipboard and hit Ctrl+X and then Y to save and exit. Now run:
 ```bash
-systemctl start wings
+sudo systemctl start wings
 ```
 You can go back to the main nodes tab in the panel and you should see a green heart next to the node.
 Next you'll have to allocate some ports for your eggs, re-enter the node and hit `Allocation`.
@@ -186,7 +186,7 @@ Congrats! You're now ready to start installing eggs.
 ## Nginx Initial Setup
 Run
 ```bash
-nano /etc/nginx/proxy_params
+sudo nano /etc/nginx/proxy_params
 ```
 and paste
 ```
@@ -197,7 +197,7 @@ proxy_set_header X-Forwarded-Proto $scheme;
 ```
 hit Ctrl+X and Y to save and exit, then run
 ```bash
-mkdir /etc/nginx/sites-available/containers
+sudo mkdir /etc/nginx/sites-available/containers
 ```
 
 ## Installing Eggs
@@ -224,7 +224,7 @@ Head to your domain registar, create a new A record, fill it like before but wit
 
 In your terminal run
 ```bash
-nano /etc/nginx/sites-available/containers/cdn.conf
+sudo nano /etc/nginx/sites-available/containers/cdn.conf
 ```
 Enter the following config, make sure to edit `server_name` and `proxy_pass`
 ```
@@ -248,9 +248,9 @@ server {
 ```
 then run
 ```bash
-ln -s /etc/nginx/sites-available/containers/cdn.conf /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/containers/cdn.conf /etc/nginx/sites-enabled/
 sudo certbot --nginx -d cdn.yourdomain.com
-systemctl reload nginx
+sudo systemctl reload nginx
 ```
 Head to your normal ptero panel, hit the CDN server, go to files, and open the `appsettings.json`
 Here is a basic config, make sure to modify values to match your server. UpdateToken is like a password, make it unique and complex and **do NOT give it out**.
@@ -330,7 +330,7 @@ Head to your domain registar, create a new A record, fill it like before but wit
 
 In your terminal run
 ```bash
-nano /etc/nginx/sites-available/containers/postgres.conf
+sudo nano /etc/nginx/sites-available/containers/postgres.conf
 ```
 Enter the following config, make sure to edit `server_name` and `proxy_pass`
 ```
@@ -347,9 +347,9 @@ server {
 ```
 then run
 ```bash
-ln -s /etc/nginx/sites-available/containers/postgres.conf /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/containers/postgres.conf /etc/nginx/sites-enabled/
 sudo certbot --nginx -d postgres.yourdomain.com
-systemctl reload nginx
+sudo systemctl reload nginx
 ```
 
 Go back to the ptero panel, go into the Postgres insance, head to `Files`, `postgres_db`, `pg_hba.conf`.
@@ -395,7 +395,7 @@ Head to your domain registar, create a new A record, fill it like before but wit
 
 In your terminal run
 ```bash
-nano /etc/nginx/sites-available/containers/gameserver.conf
+sudo nano /etc/nginx/sites-available/containers/gameserver.conf
 ```
 Enter the following config, make sure to edit `server_name` and `proxy_pass`
 ```
@@ -412,9 +412,9 @@ server {
 ```
 then run
 ```bash
-ln -s /etc/nginx/sites-available/containers/gameserver.conf /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/containers/gameserver.conf /etc/nginx/sites-enabled/
 sudo certbot --nginx -d gameserver.yourdomain.com
-systemctl reload nginx
+sudo systemctl reload nginx
 ```
 
 Head back over to your game server in ptero, click `Files`, `datadir`, `server_config.toml`
@@ -469,7 +469,7 @@ auto_record_name = "durksawesomeserver_{year}_{month}_{day}-{hour}_{minute}-roun
 directory = "/replays-complete/DurksAwesomeServer" # Here as well
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjEyMTc1MSwzOTIzMDE5MjAsLTgxNT
-UxOTE2OCwtMTY3MzAwMjE2NCw5MDM1MDIyMjEsLTUyNzIzODgy
-NSw4NzA1NDQ3NjJdfQ==
+eyJoaXN0b3J5IjpbOTk0MDc3NTM2LC04NTIxMjE3NTEsMzkyMz
+AxOTIwLC04MTU1MTkxNjgsLTE2NzMwMDIxNjQsOTAzNTAyMjIx
+LC01MjcyMzg4MjUsODcwNTQ0NzYyXX0=
 -->
