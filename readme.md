@@ -383,9 +383,10 @@ Head to the Servers tab in the admin panel, click `Create New` enter the followi
  - **Server Tickrate**:
  - **Public Server**:
  - **Default Admin User**:
- - **Server Description**: 
- - **Hub URLs**:
- - **
+ - **Server Description**: `My awesome server!` This is the description that will appear on the hub
+ - **Hub URLs**: `https://hub.spacestation14.com/,https://web.networkgamez.com/,https://hub.singularity14.co.uk/`
+ - **Fork ID**: This is the Fork ID you made in the CDN, its the last part of the URL.
+ - **Build ID**: Leave this blank for latest build
 
 Hit create server.
 
@@ -416,6 +417,6 @@ sudo certbot --nginx -d gameserver.yourdomain.com
 systemctl reload nginx
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTUzNTc1NzQsOTAzNTAyMjIxLC01Mj
-cyMzg4MjUsODcwNTQ0NzYyXX0=
+eyJoaXN0b3J5IjpbLTc4OTIzNzcyOCw5MDM1MDIyMjEsLTUyNz
+IzODgyNSw4NzA1NDQ3NjJdfQ==
 -->
