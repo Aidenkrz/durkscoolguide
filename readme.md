@@ -406,7 +406,8 @@ server {
 
     location / {
         proxy_pass http://your_ip:port;
-				include /etc/nginx/proxy_params;
+        include /etc/nginx/proxy_params;
+        
     }
 }
 ```
@@ -468,8 +469,8 @@ auto_record_name = "durksawesomeserver_{year}_{month}_{day}-{hour}_{minute}-roun
 directory = "/replays-complete/DurksAwesomeServer" # Here as well
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NzUyNDMzOCwtMTU3NDU4NDc3NCwtMT
-Y4NjQ1MTE4NiwtODUyMTIxNzUxLDM5MjMwMTkyMCwtODE1NTE5
-MTY4LC0xNjczMDAyMTY0LDkwMzUwMjIyMSwtNTI3MjM4ODI1LD
-g3MDU0NDc2Ml19
+eyJoaXN0b3J5IjpbNzc5Mzg2MDQ4LC0xNTc0NTg0Nzc0LC0xNj
+g2NDUxMTg2LC04NTIxMjE3NTEsMzkyMzAxOTIwLC04MTU1MTkx
+NjgsLTE2NzMwMDIxNjQsOTAzNTAyMjIxLC01MjcyMzg4MjUsOD
+cwNTQ0NzYyXX0=
 -->
