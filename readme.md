@@ -374,7 +374,7 @@ Head to the Servers tab in the admin panel, click `Create New` enter the followi
 **Default Allocation**: Choose whatever port you'd like
 **CPU Limit**: 400% (100% is equal to one core)
 **CPU Pinning**: 0-3 (This locks the container to use only these cores, this sometimes help with servers fighting over the same thread, if you make multiple servers make sure you do not pin them to the same cores)
-**Memory**: 11444 MiB (12 GB)
+**Memory**: 12000 MiB 
 **Disk Space**: 0
 **Nest**: Your Nest
 **Egg**: SS14 Server (CDN)
@@ -468,7 +468,8 @@ auto_record_name = "durksawesomeserver_{year}_{month}_{day}-{hour}_{minute}-roun
 directory = "/replays-complete/DurksAwesomeServer" # Here as well
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODY0NTExODYsLTg1MjEyMTc1MSwzOT
-IzMDE5MjAsLTgxNTUxOTE2OCwtMTY3MzAwMjE2NCw5MDM1MDIy
-MjEsLTUyNzIzODgyNSw4NzA1NDQ3NjJdfQ==
+eyJoaXN0b3J5IjpbLTE1NzQ1ODQ3NzQsLTE2ODY0NTExODYsLT
+g1MjEyMTc1MSwzOTIzMDE5MjAsLTgxNTUxOTE2OCwtMTY3MzAw
+MjE2NCw5MDM1MDIyMjEsLTUyNzIzODgyNSw4NzA1NDQ3NjJdfQ
+==
 -->
