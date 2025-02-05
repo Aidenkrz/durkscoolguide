@@ -480,12 +480,24 @@ sudo usermod -aG pteronginx root
 sudo usermod -aG pteronginx www-data
 sudo usermod -aG pteronginx pterodactyl
 
-sudo chown -R :pteronginx /var/lib/pterodactyl/mounts
-sudo chown -R :pteronginx /var/lib/pterodactyl/mounts/replays-complete
+sudo mkdir /var/lib/pterodactyl/mounts
+sudo mkdir /var/lib/pterodactyl/mounts/replays-recording
+sudo mkdir /var/lib/pterodactyl/mounts/replays-complete
 
+sudo chown -R 999:pteronginx /var/lib/pterodactyl/mounts
+sudo chown -R 999:pteronginx /var/lib/pterodactyl/mounts/replays-recording
+sudo chown -R 999:pteronginx /var/lib/pterodactyl/mounts/replays-complete
+
+sudo chmod -R 770 /var/lib/pterodactyl/mounts
+sudo chmod -R 770 /var/lib/pterodactyl/mounts/replays-recording
+sudo chmod -R 770 /var/lib/pterodactyl/mounts/replays-complete
+
+sudo chmod g+s /var/lib/pterodactyl/mounts
+sudo chmod g+s /var/lib/pterodactyl/mounts/replays-recording
+sudo chmod g+s /var/lib/pterodactyl/mounts/replays-complete
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2ODc3OTA2NiwyMjA2MTA3NjAsLTEyNz
+eyJoaXN0b3J5IjpbLTgxNzEyMzYwNSwyMjA2MTA3NjAsLTEyNz
 czNzU3MCwtODc1OTU2ODU3LC0xNTc0NTg0Nzc0LC0xNjg2NDUx
 MTg2LC04NTIxMjE3NTEsMzkyMzAxOTIwLC04MTU1MTkxNjgsLT
 E2NzMwMDIxNjQsOTAzNTAyMjIxLC01MjcyMzg4MjUsODcwNTQ0
