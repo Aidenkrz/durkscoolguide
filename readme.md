@@ -422,12 +422,12 @@ It will probably be empty, here we will need to input some basic configs to get 
 ```toml
 [net]
 tickrate = 30
-port = 25500
+port = 00000 # Enter your servers port
 
 [status]
 enabled = true
-bind = "*:25500"
-connectaddress = "udp://136.243.32.120:25500"
+bind = "*:00000"
+connectaddress = "udp://0.0.0.0:00000"
 
 [game]
 hostname = "Durk's Super Cool Awesome Server"
@@ -437,13 +437,13 @@ soft_max_players = 64
 [hub]
 advertise = 1
 tags = "lang:en, rp:low, region:eu_w"
-server_url = "ss14://sigma.goobstation.com"
+server_url = "ss14://gameserver.yourserver.com"
 hub_urls = "https://hub.spacestation14.com/,https://web.networkgamez.com/,https://hub.singularity14.co.uk/"
 
 [database]
 engine = "postgres"
-pg_host = "postgres.goobstation.com"
-pg_port = 20000
+pg_host = "postgres.yourdomain.com"
+pg_port = 00000
 pg_database = "mycoolserver"
 pg_username = "pterodactyl"
 pg_password = "***********"
@@ -458,7 +458,7 @@ mode = 1
 [metrics]
 enabled = 1
 host = "*"
-port = 25500
+port = 00000
 
 [replay]
 auto_record = false
@@ -468,7 +468,7 @@ directory = "/replays-complete/GoobSigma"
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDc3NDgxMywzOTIzMDE5MjAsLTgxNT
+eyJoaXN0b3J5IjpbMTU1NDcwNTUzNCwzOTIzMDE5MjAsLTgxNT
 UxOTE2OCwtMTY3MzAwMjE2NCw5MDM1MDIyMjEsLTUyNzIzODgy
 NSw4NzA1NDQ3NjJdfQ==
 -->
