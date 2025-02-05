@@ -379,10 +379,10 @@ Head to the Servers tab in the admin panel, click `Create New` enter the followi
 **Nest**: Your Nest
 **Egg**: SS14 Server (CDN)
 **Service Variables**:
- - **Server Name**:
- - **Server Tickrate**:
- - **Public Server**:
- - **Default Admin User**:
+ - **Server Name**: `Durk's Super Cool Awesome Server` Name that will appear on the hub.
+ - **Server Tickrate**: `30` If you are a low playercount server with good hardware, you can bump this up to 60, otherwise leave it at 30.
+ - **Public Server**: `True` This will make you show up on the hub/s.
+ - **Default Admin User**: `Herobrine` You will need this to run commands ingame, make it your SS14 Username.
  - **Server Description**: `My awesome server!` This is the description that will appear on the hub
  - **Hub URLs**: `https://hub.spacestation14.com/,https://web.networkgamez.com/,https://hub.singularity14.co.uk/`
  - **Fork ID**: This is the Fork ID you made in the CDN, its the last part of the URL.
@@ -417,6 +417,6 @@ sudo certbot --nginx -d gameserver.yourdomain.com
 systemctl reload nginx
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4OTIzNzcyOCw5MDM1MDIyMjEsLTUyNz
-IzODgyNSw4NzA1NDQ3NjJdfQ==
+eyJoaXN0b3J5IjpbLTE2NzMwMDIxNjQsOTAzNTAyMjIxLC01Mj
+cyMzg4MjUsODcwNTQ0NzYyXX0=
 -->
