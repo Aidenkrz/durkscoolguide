@@ -446,7 +446,7 @@ pg_host = "postgres.yourdomain.com"
 pg_port = 00000 # Enter the port for your database
 pg_database = "mycoolserver" # This can be anything
 pg_username = "pterodactyl" # Ideally you would create a seperate user in your postgres that only has access to the above database, but you can use the superuser
-pg_password = "***********"
+pg_password = "***********" # Password for your postgres, if you forgot it you can go back to the postgres instance and hit startup to view it.
 
 [console]
 login_host_user = "Herobrine"
@@ -459,18 +459,18 @@ mode = 1
 [metrics]
 enabled = 1
 host = "*"
-port = 00000
+port = 00000 # Enter your game server's port
 
 # Only enter the following if you intend to setup replays
 [replay] 
 auto_record = true
 auto_record_temp_dir = "/replays-recording"
 auto_record_name = "sigma_{year}_{month}_{day}-{hour}_{minute}-round_{round}.zip"
-directory = "/replays-complete/GoobSigma"
+directory = "/replays-complete/DurksAwesomeServer" # modify the 
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwOTE1NzM5LDM5MjMwMTkyMCwtODE1NT
-E5MTY4LC0xNjczMDAyMTY0LDkwMzUwMjIyMSwtNTI3MjM4ODI1
-LDg3MDU0NDc2Ml19
+eyJoaXN0b3J5IjpbMTE1NzM3MzE1MSwzOTIzMDE5MjAsLTgxNT
+UxOTE2OCwtMTY3MzAwMjE2NCw5MDM1MDIyMjEsLTUyNzIzODgy
+NSw4NzA1NDQ3NjJdfQ==
 -->
