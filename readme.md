@@ -326,7 +326,7 @@ Head to the Servers tab in the admin panel, click `Create New` enter the followi
 Hit create server.
 
 Head to your domain registar, create a new A record, fill it like before but with the CDN, and wait a few minutes.
-![CDN DNS Record](cdndns.png)
+![Postgres DNS Record](postgresdns.png)
 
 In your terminal run
 ```bash
@@ -417,6 +417,6 @@ sudo certbot --nginx -d gameserver.yourdomain.com
 systemctl reload nginx
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzMwMDIxNjQsOTAzNTAyMjIxLC01Mj
-cyMzg4MjUsODcwNTQ0NzYyXX0=
+eyJoaXN0b3J5IjpbLTgxNTUxOTE2OCwtMTY3MzAwMjE2NCw5MD
+M1MDIyMjEsLTUyNzIzODgyNSw4NzA1NDQ3NjJdfQ==
 -->
