@@ -420,19 +420,9 @@ systemctl reload nginx
 Head back over to your game server in ptero, click `Files`, `datadir`, `server_config.toml`
 It will probably be empty, here we will need to input some basic configs to get it up and running.
 ```toml
-[log]
-path = "logs"
-format = "log_%(date)s-%(time)s.txt"
-level = 2
-enabled = false
-
 [net]
 tickrate = 30
 port = 25500
-max_connections = 2000
-lidgren_log_warning = false
-lidgren_log_error = false
-log_late_msg = false
 
 [status]
 enabled = true
@@ -440,13 +430,9 @@ bind = "*:25500"
 connectaddress = "udp://136.243.32.120:25500"
 
 [game]
-hostname = "Goob Sigma ᴇᴜ-ᴡ"
+hostname = "Durk's Super Cool Awesome Server"
 desc = "My awesome server!"
-soft_max_players = 2000
-
-
-[build]
-fork_id = "GoobLRP"
+soft_max_players = 64
 
 [hub]
 advertise = 1
@@ -458,9 +444,9 @@ hub_urls = "https://hub.spacestation14.com/,https://web.networkgamez.com/,https:
 engine = "postgres"
 pg_host = "postgres.goobstation.com"
 pg_port = 20000
-pg_database = "goobstation-lrp"
+pg_database = "mycoolserver"
 pg_username = "pterodactyl"
-pg_password = "#dnwfL9&9UwtF3ZB&bl$"
+pg_password = "***********"
 
 [console]
 login_host_user = "GoobStation"
@@ -482,7 +468,7 @@ directory = "/replays-complete/GoobSigma"
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY2NTg4ODY5LDM5MjMwMTkyMCwtODE1NT
-E5MTY4LC0xNjczMDAyMTY0LDkwMzUwMjIyMSwtNTI3MjM4ODI1
-LDg3MDU0NDc2Ml19
+eyJoaXN0b3J5IjpbLTE4MDc3NDgxMywzOTIzMDE5MjAsLTgxNT
+UxOTE2OCwtMTY3MzAwMjE2NCw5MDM1MDIyMjEsLTUyNzIzODgy
+NSw4NzA1NDQ3NjJdfQ==
 -->
