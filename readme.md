@@ -391,7 +391,7 @@ Head to the Servers tab in the admin panel, click `Create New` enter the followi
 Hit create server.
 
 Head to your domain registar, create a new A record, fill it like before but with the CDN, and wait a few minutes.
-![CDN DNS Record](cdndns.png)
+![Game Server DNS Record](gameserverdns.png)
 
 In your terminal run
 ```bash
@@ -416,7 +416,10 @@ ln -s /etc/nginx/sites-available/containers/gameserver.conf /etc/nginx/sites-ena
 sudo certbot --nginx -d gameserver.yourdomain.com
 systemctl reload nginx
 ```
+
+Head back over to your game server in ptero, click `Files`, `datadir`, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNTUxOTE2OCwtMTY3MzAwMjE2NCw5MD
-M1MDIyMjEsLTUyNzIzODgyNSw4NzA1NDQ3NjJdfQ==
+eyJoaXN0b3J5IjpbLTE3MzUyMDY0NSwtODE1NTE5MTY4LC0xNj
+czMDAyMTY0LDkwMzUwMjIyMSwtNTI3MjM4ODI1LDg3MDU0NDc2
+Ml19
 -->
