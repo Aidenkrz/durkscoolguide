@@ -495,7 +495,12 @@ sudo chmod -R 770 /var/lib/pterodactyl/mounts/replays-complete
 sudo chmod g+s /var/lib/pterodactyl/mounts
 sudo chmod g+s /var/lib/pterodactyl/mounts/replays-recording
 sudo chmod g+s /var/lib/pterodactyl/mounts/replays-complete
+
+sudo setfacl -d -m g::rwX /var/lib/pterodactyl/mounts
+sudo setfacl -d -m g::rwX /var/lib/pterodactyl/mounts/replays-recording
+sudo setfacl -d -m g::rwX /var/lib/pterodactyl/mounts/replays-complete
 ```
+ill be honest i just tried 30 different commands until replays started working, you probably dont even need half of these but whatever.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTgxNzEyMzYwNSwyMjA2MTA3NjAsLTEyNz
 czNzU3MCwtODc1OTU2ODU3LC0xNTc0NTg0Nzc0LC0xNjg2NDUx
