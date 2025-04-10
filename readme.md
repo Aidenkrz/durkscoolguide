@@ -502,9 +502,9 @@ sudo setfacl -d -m g::rwX /var/lib/pterodactyl/mounts/replays-complete
 ```
 ill be honest i just tried 30 different commands until replays started working, you probably dont even need half of these but whatever.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNzEyMzYwNSwyMjA2MTA3NjAsLTEyNz
-czNzU3MCwtODc1OTU2ODU3LC0xNTc0NTg0Nzc0LC0xNjg2NDUx
-MTg2LC04NTIxMjE3NTEsMzkyMzAxOTIwLC04MTU1MTkxNjgsLT
-E2NzMwMDIxNjQsOTAzNTAyMjIxLC01MjcyMzg4MjUsODcwNTQ0
-NzYyXX0=
+eyJoaXN0b3J5IjpbLTEzMDc4OTcxMzEsLTgxNzEyMzYwNSwyMj
+A2MTA3NjAsLTEyNzczNzU3MCwtODc1OTU2ODU3LC0xNTc0NTg0
+Nzc0LC0xNjg2NDUxMTg2LC04NTIxMjE3NTEsMzkyMzAxOTIwLC
+04MTU1MTkxNjgsLTE2NzMwMDIxNjQsOTAzNTAyMjIxLC01Mjcy
+Mzg4MjUsODcwNTQ0NzYyXX0=
 -->
