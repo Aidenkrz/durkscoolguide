@@ -282,7 +282,7 @@ Here is a basic config, make sure to modify values to match your server. UpdateT
   "Cdn": {
     "DatabaseFileName": "/home/container/content.db",
     "StreamCompressLevel": 5,
-    "MyCoolFork": "GoobLRP"
+    "DefaultFork": "MyCoolFork"
   },
 
   "BaseUrl": "https://cdn.yourdomain.com/",
@@ -502,9 +502,9 @@ sudo setfacl -d -m g::rwX /var/lib/pterodactyl/mounts/replays-complete
 ```
 ill be honest i just tried 30 different commands until replays started working, you probably dont even need half of these but whatever.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDc4OTcxMzEsLTgxNzEyMzYwNSwyMj
-A2MTA3NjAsLTEyNzczNzU3MCwtODc1OTU2ODU3LC0xNTc0NTg0
-Nzc0LC0xNjg2NDUxMTg2LC04NTIxMjE3NTEsMzkyMzAxOTIwLC
-04MTU1MTkxNjgsLTE2NzMwMDIxNjQsOTAzNTAyMjIxLC01Mjcy
-Mzg4MjUsODcwNTQ0NzYyXX0=
+eyJoaXN0b3J5IjpbMTEwODAxNzM5MSwtMTMwNzg5NzEzMSwtOD
+E3MTIzNjA1LDIyMDYxMDc2MCwtMTI3NzM3NTcwLC04NzU5NTY4
+NTcsLTE1NzQ1ODQ3NzQsLTE2ODY0NTExODYsLTg1MjEyMTc1MS
+wzOTIzMDE5MjAsLTgxNTUxOTE2OCwtMTY3MzAwMjE2NCw5MDM1
+MDIyMjEsLTUyNzIzODgyNSw4NzA1NDQ3NjJdfQ==
 -->
