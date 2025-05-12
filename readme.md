@@ -407,14 +407,18 @@ server {
     location / {
         proxy_pass http://your_ip:port;
         include /etc/nginx/proxy_params;
-        add_header  'Access-Control-Allow-Origin'  '*';
+        proxy_hide_header Access-Control-Allow-Origin;
+        add_header 'Access-Control-Allow-Origin' '*' always;
+        add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS' always;
+        add_header 'Access-Control-Allow-Headers' 'Origin, Content-Type, Accept' always;
+
     }
 }
 ```
 then run
 ```bash
 sudo ln -s /etc/nginx/sites-available/containers/gameserver.conf /etc/nginx/sites-enabled/
-sudo certbot --nginx -d gameserver.yourdomain.com
+sudo certbot --nginx -d server.scyllastation.com
 sudo systemctl reload nginx
 ```
 Head back over to your game server in ptero, click `Files`, `datadir`, `server_config.toml`
@@ -502,9 +506,10 @@ sudo setfacl -d -m g::rwX /var/lib/pterodactyl/mounts/replays-complete
 ```
 ill be honest i just tried 30 different commands until replays started working, you probably dont even need half of these but whatever.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwODAxNzM5MSwtMTMwNzg5NzEzMSwtOD
-E3MTIzNjA1LDIyMDYxMDc2MCwtMTI3NzM3NTcwLC04NzU5NTY4
-NTcsLTE1NzQ1ODQ3NzQsLTE2ODY0NTExODYsLTg1MjEyMTc1MS
-wzOTIzMDE5MjAsLTgxNTUxOTE2OCwtMTY3MzAwMjE2NCw5MDM1
-MDIyMjEsLTUyNzIzODgyNSw4NzA1NDQ3NjJdfQ==
+eyJoaXN0b3J5IjpbLTYzNjcyOTI0MCwxMTA4MDE3MzkxLC0xMz
+A3ODk3MTMxLC04MTcxMjM2MDUsMjIwNjEwNzYwLC0xMjc3Mzc1
+NzAsLTg3NTk1Njg1NywtMTU3NDU4NDc3NCwtMTY4NjQ1MTE4Ni
+wtODUyMTIxNzUxLDM5MjMwMTkyMCwtODE1NTE5MTY4LC0xNjcz
+MDAyMTY0LDkwMzUwMjIyMSwtNTI3MjM4ODI1LDg3MDU0NDc2Ml
+19
 -->
